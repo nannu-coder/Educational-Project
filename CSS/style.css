@@ -26,6 +26,7 @@ Fonts: Google Fonts
   --btn-bg: #5838fc;
   --white: #ffffff;
   --card-bg: #f7f6fa;
+  --sec-title: #2c234d;
 }
 
 /*************************************
@@ -71,6 +72,41 @@ Fonts: Google Fonts
   margin-bottom: 50px;
 }
 
+.sec-title {
+  font-size: 34px;
+  line-height: 44px;
+  color: var(--sec-titles);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+.primary-title {
+  font-size: 34px;
+  line-height: 44px;
+  color: #2c234d;
+  margin: 0 0 61px;
+  position: relative;
+  font-weight: 800;
+}
+
+.primary-link {
+  color: var(--text-color);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  transition: all linear 0.4s;
+}
+
+.primary-link:hover .primary-link-icon {
+  margin-left: 15px;
+  /* margin-left: 10px; */
+  color: var(--btn-bg);
+}
+
+.primary-link-icon {
+  margin-left: 5px;
+  transition: all linear 0.4s;
+}
+
 /*************************************
             Common Style
 **************************************/
@@ -78,6 +114,11 @@ Fonts: Google Fonts
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 
 ul,
@@ -109,13 +150,13 @@ a {
   height: 126%;
   left: 0;
   bottom: -215px;
-  z-index: 1111;
+  z-index: 111;
 }
 
 .banner-content {
   margin-top: 100px;
   position: relative;
-  z-index: 99;
+  z-index: 999;
 }
 
 .banner-content h2 {
@@ -129,22 +170,162 @@ a {
             Course Section
 **************************************/
 
+.course-heading {
+  position: relative;
+  z-index: 111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .course-card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
+  margin-bottom: 40px;
 }
 
 .card-style {
   padding: 40px 10px 10px 10px;
   background-color: var(--card-bg);
   border-radius: 20px;
+  border: none;
+  transition: all linear 0.4s;
+  position: relative;
+  z-index: 111;
+}
+
+.card-style:hover {
+  box-shadow: 0px 30px 50px 0px rgb(11 2 55 / 10%);
+  -webkit-box-shadow: 0px 30px 50px 0px rgb(11 2 55 / 10%);
+  -moz-box-shadow: 0px 30px 50px 0px rgb(11 2 55 / 10%);
+  background: var(--white);
+}
+
+.card-style::after {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 0;
+  border-color: #5838fc #fff #fff #fff;
+  content: "";
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 20px 0 0 0;
+  -webkit-transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  transition: all linear 0.4s;
+}
+
+.card-style:hover::after {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+  left: 0;
 }
 
 .card-image {
   margin-bottom: 25px;
+  height: 100px;
+}
+
+.card-image img {
+  object-fit: contain;
+  height: 100%;
 }
 
 #card-text {
   margin-bottom: 22px;
+}
+
+/*************************************
+            Stay With Section
+**************************************/
+
+.section-stay {
+  margin-top: 50px;
+}
+
+.stay-with-content {
+  margin-top: 50px;
+}
+
+.stay-with-content .primary-title {
+  margin-bottom: 40px;
+}
+
+.blue-text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #5838fc;
+  margin-bottom: 25px;
+}
+
+/*************************************
+          Online Course Section
+**************************************/
+
+.online-section {
+  margin-top: 120px;
+  background: var(--card-bg);
+}
+.online {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card-title-style {
+  display: inline-block;
+  height: 26px;
+  background: rgba(252, 46, 144, 0.1);
+  font-size: 13px;
+  line-height: 0.8;
+  color: #fc2e90;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 3px;
+  padding: 7px 11px;
+  margin: 0 0 14px;
+}
+
+.card-text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #2c234d;
+  font-weight: 600;
+}
+
+.card-img {
+  height: 270px;
+}
+
+.card-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-footer {
+  background: var(--white);
+  border-top: 2px dotted #c3c2c8;
+  padding: 12px 18px;
+  transition: all linear 0.4s;
+}
+
+.footer-link {
+  color: var(--text-color);
+}
+
+.footer-icon {
+  margin-right: 10px;
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.card-body-content {
+  min-height: 130px;
 }
