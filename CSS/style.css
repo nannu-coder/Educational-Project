@@ -25,6 +25,7 @@ Fonts: Google Fonts
   --text-color: #5d5a67;
   --btn-bg: #5838fc;
   --white: #ffffff;
+  --card-bg: #f7f6fa;
 }
 
 /*************************************
@@ -131,8 +132,19 @@ a {
 .course-card {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
 }
 
-.computer {
-  color: red;
+.card-style {
+  padding: 40px 10px 10px 10px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+}
+
+.card-image {
+  margin-bottom: 25px;
+}
+
+#card-text {
+  margin-bottom: 22px;
 }
