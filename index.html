@@ -11,13 +11,17 @@
     <link rel="stylesheet" href="plugins/fontawesome/CSS/all.css" />
     <!--==========Style CSS==========-->
     <link rel="stylesheet" href="CSS/style.css" />
+    <!--==========Responsive CSS==========-->
+    <link rel="stylesheet" href="CSS/responsive.css" />
   </head>
   <body>
     <header>
       <!--==========Section Nav==========-->
       <nav class="navbar fixed-top navbar-expand-lg navbar-light">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="./images/logo.png" alt="" />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -35,41 +39,26 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Courses</a
                 >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Blogs</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >About</a
                 >
               </li>
             </ul>
             <div class="auth d-flex">
-              <button>Profile</button>
-              <a href="#">Join For Free</a>
+              <button class="circle-btn">
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <a class="nav-btn" href="#">Join For Free</a>
             </div>
           </div>
         </div>
@@ -183,7 +172,7 @@
                 </div>
               </div>
 
-              <div class="card text-center card-style">
+              <div class="card text-center card-style last">
                 <div class="card-image mt-3">
                   <img
                     class="img-fluid computer w-75"
@@ -208,12 +197,12 @@
       <div class="stay-with">
         <div class="container">
           <div class="row">
-            <div class="col-lg-7">
+            <div class="col-lg-7 col-md-7">
               <div class="stay-with-image">
-                <img src="./images/stay.png" alt="Staywith" />
+                <img class="img-fluid" src="./images/stay.png" alt="Staywith" />
               </div>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-5">
               <div class="stay-with-content">
                 <h2 class="primary-title">
                   I will stay with you until you pass your exam.
@@ -249,7 +238,7 @@
               </div>
             </div>
             <!-- Card -->
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="card border-0 online-card-style">
                 <div class="card-img text-center py-4">
                   <img src="./images/card/1.png" class="card-img-1" alt="..." />
@@ -280,7 +269,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="card border-0 online-card-style">
                 <div class="card-img text-center py-4">
                   <img
@@ -317,7 +306,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
               <div class="card border-0 online-card-style">
                 <div class="card-img text-center py-4">
                   <img
@@ -356,6 +345,266 @@
         </div>
       </div>
     </section>
+
+    <!--==========BG Online==========-->
+    <section class="bg-online-section">
+      <div class="bg-online">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="bg-online-content">
+                <p class="sec-title">Online Course</p>
+                <h3 class="primary-title">From 160 Top Institutions.</h3>
+                <p class="bg-online-des">
+                  So I said codswallop car boot cheers mufty I don't want no
+                  agro are you taking the <br />
+                  piss cheeky my lady gutted mate excuse my french
+                </p>
+
+                <a href="#" class="button sec-btn">Start Courses</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========Contact Now Section==========-->
+    <section class="contact-section">
+      <div class="contact-now">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="contact-heading text-center">
+                <p class="sec-title">Contact Now</p>
+                <h2 class="primary-title">Upcoming Events</h2>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contact-card">
+                <div class="date">
+                  <p class="e-date">24</p>
+                  <p class="m-date">Jun</p>
+                </div>
+                <div class="contact-content">
+                  <p>
+                    <span class="location-icon"
+                      ><i class="fa-solid fa-location-dot"></i
+                    ></span>
+                    New York, US
+                  </p>
+                  <h4>Consumer Food Safety Education Conference</h4>
+                  <a class="contact-cta" href="#">Get Ticket</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contact-card">
+                <div class="date">
+                  <p class="e-date">27</p>
+                  <p class="m-date">Jun</p>
+                </div>
+                <div class="contact-content">
+                  <p>
+                    <span class="location-icon"
+                      ><i class="fa-solid fa-location-dot"></i
+                    ></span>
+                    Vancouver, Canada
+                  </p>
+                  <h4>Build Awesome Education Website Using WordPress</h4>
+                  <a class="contact-cta" href="#">Get Ticket</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="view-all mt-5 text-center">
+                <a class="course-link primary-link" href="#">
+                  View All Events
+                  <span class="primary-link-icon"
+                    ><i class="fa-solid fa-arrow-right-long"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========Blogs Section==========-->
+    <section class="blog-section">
+      <div class="blogs">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="blog-title text-center">
+                <p class="sec-title">Secrets of</p>
+                <h2 class="primary-title">learning Revealed in Blogs</h2>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card blog-card">
+                <img
+                  src="./images/blogs/1.jpg"
+                  class="card-img-top"
+                  alt="blogs-img"
+                />
+                <div class="card-body">
+                  <div class="blog-date">
+                    <div class="date">
+                      <p>
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        April 22, 2023
+                      </p>
+                    </div>
+                    <div class="comments">
+                      <p>
+                        <span><i class="fa-solid fa-comments"></i></span>
+                        4 Comments
+                      </p>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    Build A Full Web Chat App From Scratch.
+                  </p>
+                  <div class="card-btn">
+                    <a class="course-link primary-link" href="#">
+                      Read More
+                      <span class="primary-link-icon"
+                        ><i class="fa-solid fa-arrow-right-long"></i
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card blog-card">
+                <img
+                  src="./images/blogs/2.jpg"
+                  class="card-img-top"
+                  alt="blogs-img"
+                />
+                <div class="card-body">
+                  <div class="blog-date">
+                    <div class="date">
+                      <p>
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        April 22, 2023
+                      </p>
+                    </div>
+                    <div class="comments">
+                      <p>
+                        <span><i class="fa-solid fa-comments"></i></span>
+                        4 Comments
+                      </p>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    Build A Full Web Chat App From Scratch.
+                  </p>
+                  <div class="card-btn">
+                    <a class="course-link primary-link" href="#">
+                      Read More
+                      <span class="primary-link-icon"
+                        ><i class="fa-solid fa-arrow-right-long"></i
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card blog-card">
+                <img
+                  src="./images/blogs/3.jpg"
+                  class="card-img-top"
+                  alt="blogs-img"
+                />
+                <div class="card-body">
+                  <div class="blog-date">
+                    <div class="date">
+                      <p>
+                        <span><i class="fa-solid fa-clock"></i></span>
+                        April 22, 2023
+                      </p>
+                    </div>
+                    <div class="comments">
+                      <p>
+                        <span><i class="fa-solid fa-comments"></i></span>
+                        4 Comments
+                      </p>
+                    </div>
+                  </div>
+                  <p class="card-text">
+                    Build A Full Web Chat App From Scratch.
+                  </p>
+                  <div class="card-btn">
+                    <a class="course-link primary-link" href="#">
+                      Read More
+                      <span class="primary-link-icon"
+                        ><i class="fa-solid fa-arrow-right-long"></i
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========Footer Section==========-->
+    <footer class="footer-section">
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-location">
+                <h2>Location</h2>
+                <p class="text mb-0">Somewhere In Bangladesh</p>
+                <p class="text">Bangladesh</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="social-link">
+                <h2>Around The Web</h2>
+                <a class="link" href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa-solid fa-basketball"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-about">
+                <h2>About</h2>
+                <p class="text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quidem eos a nihil? Quisquam, animi. Saepe, maxime enim
+                  voluptatum nesciunt cum dolorem fugiat.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-12"></div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <p class="footer-text">All Right Reserved &copy; 2023</p>
+        </div>
+      </div>
+    </footer>
 
     <!--==========Bootstrap Script==========-->
     <script src="plugins/bootstrap/JS/bootstrap.bundle.min.js"></script>
